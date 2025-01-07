@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../fonts/Satoshi-Variable.ttf')
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Satoshi', sans-serif;
+}
+
+/* 
+    Gradiente: #0F49C6 - #7DA6FF | Linear
+*/
+
+:root {
+    --blu1: #0F49C6;
+    --blu2: #7DA6FF;
+    --blu3: #D9E5FF;
+
+    --grey1: #F4F4F4;
+    --grey2: #F1F1F1;
+}
+
+/* Menu superior */
+.top-menu {
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: center;
+}
+
+.top-menu nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25%;
+    align-items: center;
+    width: 75%;
+    background-color: rgba(217, 229, 255, 65%);
+    border-radius: 0 0 1rem 1rem;
+}
+
+/* Menu Superior - Logo */
+.top-menu h1 {
+    color: var(--blu1);
+}
+
+/* Menu Superior - Navegação */
+
+.top-menu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+.top-menu nav ul li {
+    list-style: none;
+}
+
+.top-menu nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.top-menu nav ul li input {
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Satoshi', sans-serif;
+    color: white;
+    background-color: var(--blu1);
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+    border-radius: 2rem;
+    border: none;
+}
