@@ -8,12 +8,11 @@ body {
     height: 100%;
     padding: 0;
     margin: 0;
-    overflow-x: hidden;
     font-family: 'Satoshi', sans-serif;
 }
 
 /* 
-    Gradiente: #0F49C6 - #7DA6FF | Linear
+    Gradiente 1: #0F49C6 - #7DA6FF | Linear
 */
 
 :root {
@@ -29,15 +28,16 @@ body {
 .top-menu {
     width: 100%;
     display: flex;
-    position: sticky;
+    position: fixed;
     justify-content: center;
+    align-items: center;
 }
 
 .top-menu nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 25%;
+    gap: 2%;
     align-items: center;
     width: 75%;
     background-color: rgba(217, 229, 255, 65%);
@@ -47,6 +47,7 @@ body {
 /* Menu Superior - Logo */
 .top-menu h1 {
     color: var(--blu1);
+    font-size: 150%;
 }
 
 /* Menu Superior - Navegação */
@@ -54,17 +55,24 @@ body {
 .top-menu nav ul {
     display: flex;
     flex-direction: row;
-    gap: 2rem
+    gap: 12%
 }
 
 .top-menu nav ul li {
     list-style: none;
+    width: 250%;
 }
 
 .top-menu nav ul li a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 100%;
     color: black;
+    transition: color .25s;
+}
+
+.top-menu nav ul li a:hover {
+    color: var(--blu1);
 }
 
 .top-menu nav ul li input {
@@ -79,4 +87,143 @@ body {
     padding-bottom: .2rem;
     border-radius: 2rem;
     border: none;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+}
+
+.hero-content {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 12%;
+}
+
+.hero-content > * {
+    width: 50%;
+}
+
+.hero-image {
+    min-width: 15%;
+    max-width: 55%;
+    height: 100%;
+    background-color: var(--blu1);
+}
+
+.hero-titulo {
+    font-size: 160%;
+}
+
+.hero-titulo span {
+    color: var(--blu1);
+}
+
+.hero-paragrafo p {
+    font-size: 100%;
+    padding-bottom: 6rem;
+}
+
+.hero-botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.hero-botoes #hero-btn-contato {
+    border: none;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, #0F49C6, #7DA6FF);
+    color: white;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 120%;
+}
+
+.hero-botoes #hero-btn-convenios {
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--blu3);
+    color: var(--blu1);
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 120%;
+}
+
+
+
+/* Diferenciais */
+
+.diferenciais {
+    margin-top: -2%;
+    margin-bottom: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.diffs-card {
+    background-color: var(--grey1);
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
+.diffs-card h1 {
+    color: var(--blu1);
+    font-size: 1.2rem;
+}
+
+.diffs-card p {
+    font-size: .9rem;
+}
+
+
+
+/* Sobre nós */
+.sobre-nos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.sobre-nos-img {
+    flex: 50%;
+}
+
+.sobre-nos-content {
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.sobre-nos-content h3 {
+    font-size: 120%;
+}
+
+.sobre-nos-content h1 {
+    font-size: 250%;
+}
+
+.sobre-nos-content span {
+    color: var(--blu1);
 }
