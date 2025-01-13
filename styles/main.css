@@ -33,13 +33,18 @@ body {
     align-items: center;
 }
 
+@media (max-width: 762px) {
+    .top-menu {
+        display: none;
+    }
+}
+
 .top-menu nav {
     padding-left: 8%;
     padding-right: 8%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* gap: clamp(2%, 50%,32%); */
     justify-content: space-between;
     align-items: center;
     width: 75%;
@@ -95,24 +100,19 @@ body {
 .hero {
     width: 100%;
     height: 85vh;
+    gap: 8%;
     display: flex;
 }
 
 .hero-content {
-    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 12%;
 }
 
-.hero-content > * {
-    width: 50%;
-}
-
 .hero-image {
-    min-width: 15%;
-    max-width: 55%;
+    flex: 35%;
     height: 100%;
     background-color: var(--blu1);
 }
@@ -131,9 +131,17 @@ body {
 }
 
 .hero-botoes {
+    width: 50%;
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+}
+
+@media (max-width: 762px) {
+    .hero-botoes {
+        flex-direction: column;
+        width: 75%;
+    }
 }
 
 .hero-botoes #hero-btn-contato {
@@ -174,6 +182,15 @@ body {
     gap: 2%;
 }
 
+@media (max-width: 762px) {
+    .diferenciais {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 2%;
+    }
+}
+
 .diffs-card {
     background-color: var(--grey1);
     width: 20%;
@@ -186,6 +203,12 @@ body {
     padding-left: 2%;
     padding-right: 2%;
     text-align: center;
+}
+
+@media (max-width: 762px) {
+    .diffs-card {
+        width: 75%;
+    }
 }
 
 .diffs-card h1 {
