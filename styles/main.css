@@ -227,7 +227,12 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+}
 
+@media (max-width: 762px) {
+    .sobre-nos {
+        flex-direction: column-reverse;
+    }
 }
 
 .sobre-nos-img {
@@ -293,6 +298,14 @@ body {
     /* flex-wrap: wrap; */
 }
 
+@media (max-width: 762px) {
+    .servicos-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2%;
+    }
+}
+
 .servicos-card {
     background-color: var(--blu3);
     /* flex-basis: calc(100%/4); */
@@ -301,8 +314,37 @@ body {
     padding-top: 5%;
     padding-bottom: 2.5%;
     margin: .5%;
+    border-radius: 1rem;
 }
 
 .servicos-card > * {
     color: var(--blu1);
+}
+
+
+
+/* Convenios */
+
+.convenios {
+    display: flex;
+    flex-direction: column;
+}
+
+.convenios img {
+    max-width: 20%;
+}
+
+.convenios-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+#convenios-row-1 {
+    justify-content: end;
+}
+
+#convenios-row-2 {
+    justify-content: start;
 }
