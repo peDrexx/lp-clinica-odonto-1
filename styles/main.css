@@ -230,6 +230,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: row;
+    gap: 2%;
 }
 
 @media (max-width: 762px) {
@@ -242,11 +243,27 @@ body {
     flex: 50%;
 }
 
+.sobre-nos-img img {
+    width: 100%;
+    position: relative;
+    border-radius: 0 2rem 2rem 0;
+}
+
+@media (max-width: 762px) {
+    .sobre-nos-img img {
+        border-radius: 2rem;
+    }
+}
+
 .sobre-nos-content {
     flex: 50%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
+}
+
+.sobre-nos-content > * {
+    width: 50%;
 }
 
 .sobre-nos-content h3 {
@@ -379,10 +396,15 @@ body {
 
 
 .dentista-card {
-    width: 15%;
+    flex: calc(1/5);
     height: 100%;
     background-size: cover;
     background-position: center;
+    transition: all .5s;
+}
+
+.dentista-card:hover {
+    flex: calc(1/3);
 }
 
 #dentista-1 {
