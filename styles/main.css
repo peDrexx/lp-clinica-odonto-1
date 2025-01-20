@@ -343,9 +343,29 @@ body {
 
 /* Convenios */
 
+@keyframes revelar-1 {
+    from {
+        transform: translateX(50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes revelar-2 {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .convenios {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 110vh;
 }
 
 .convenios img {
@@ -361,11 +381,17 @@ body {
 }
 
 #convenios-row-1 {
-    justify-content: end;
+    justify-content: center;
+    animation: revelar-1 linear 2s;
+    animation-timeline: view();
+    animation-range: normal 50%;
 }
 
 #convenios-row-2 {
-    justify-content: start;
+    justify-content: center;
+    animation: revelar-2 linear 2s;
+    animation-timeline: view();
+    animation-range: normal 50%;
 }
 
 
