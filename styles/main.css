@@ -140,6 +140,18 @@ body {
     gap: 1.5rem;
 }
 
+.hero-botoes a {
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 120%;
+    border: none;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+
 @media (max-width: 762px) {
     .hero-botoes {
         flex-direction: column;
@@ -148,27 +160,13 @@ body {
 }
 
 .hero-botoes #hero-btn-contato {
-    border: none;
-    border-radius: 2rem;
     background-image: linear-gradient(to right, #0F49C6, #7DA6FF);
     color: white;
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 120%;
 }
 
 .hero-botoes #hero-btn-convenios {
-    border: none;
-    border-radius: 2rem;
     background-color: var(--blu3);
     color: var(--blu1);
-    padding-left: 12%;
-    padding-right: 12%;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    font-size: 120%;
 }
 
 
