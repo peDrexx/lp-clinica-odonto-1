@@ -25,6 +25,10 @@ body {
     --grey2: #F1F1F1;
 }
 
+h1 {
+    font-size: 300%;
+}
+
 /* Menu superior */
 .top-menu {
     width: 100%;
@@ -54,6 +58,7 @@ body {
     backdrop-filter: blur(8px);
     border-radius: 0 0 1rem 1rem;
 }
+
 
 /* Menu Superior - Logo */
 .top-menu h1 {
@@ -122,6 +127,10 @@ body {
 
 .hero-titulo {
     font-size: 160%;
+}
+
+.hero-titulo h1 {
+    font-size: 170%;
 }
 
 .hero-titulo span {
@@ -293,7 +302,10 @@ body {
     width: 50%;
 }
 
-
+.sobre-nos li::marker {
+    color: var(--blu2);
+    font-size: 200%;
+}
 
 /* Nossos Serviços */
 .nossos-servicos {
@@ -398,15 +410,17 @@ body {
 
 /* Nossos Profissionais */
 .nossos-profissionais {
-    padding: 2%;
     width: 100%;
     height: 95vh;
     display: flex;
     flex-direction: column;
+    gap: 2%;
 }
 
 .nossos-profissionais h1 {
     color: var(--blu1);
+    padding-right: 2%;
+    align-self: flex-end;
 }
 
 .profissionais {
@@ -460,4 +474,61 @@ body {
 
 #dentista-3 {
     background-image: url("../img/profissionais/dentista3.jpg");
+}
+
+
+/* Contato */
+.contato {
+    width: 100%;
+    height: 100vh;
+    margin-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.entre-em-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    flex: calc(1/3);
+}
+
+.entre-em-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contato-cta {
+    color: var(--blu1);
+}
+
+.contato-sect {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+}
+
+.contato-sect label {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.contato-sect input, textarea {
+    background-color: var(--grey2);
+    border: none;
+    border-radius: 11px;
+    font-size: 110%;
+    padding: 1%;
+    padding-left: 2%;
+}
+
+.contato-sect input, textarea:focus {
+    outline: none;
+}
+
+.contato-sect input {
+    height: 3rem;
 }
