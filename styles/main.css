@@ -482,17 +482,22 @@ h1 {
     width: 100%;
     height: 100vh;
     margin-top: 15%;
-    padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
+
+/* Formulário */
 
 .entre-em-contato {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 5%;
-    flex: calc(1/3);
+    flex: calc(1/2);
+    padding: 5%;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .entre-em-contato form {
@@ -531,4 +536,28 @@ h1 {
 
 .contato-sect input {
     height: 3rem;
+}
+
+/* Informações de contato */
+
+.dados-contato {
+    padding: 5%;
+    background-color: var(--blu1);   
+    justify-self: flex-end;
+    flex: calc(1/2);
+    border-radius: 35px 0 0 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mapa {
+    width: 100%;
+    height: 100%;
+    flex: calc(3/4);
+}
+
+#mapa iframe {
+    width: 100% !important;
+    height: 100% !important;
 }
