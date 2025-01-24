@@ -561,3 +561,45 @@ h1 {
     width: 100% !important;
     height: 100% !important;
 }
+
+.infos-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2%;
+    gap: 2%;
+}
+
+.info-card {
+    /* background-color: #1c5eec; */
+    flex: calc(1/3);
+    height: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* opacity: 75%; */
+}
+
+.info-title, .info-content {
+    color: var(--grey2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.info-title h2 {
+    font-size: 90%;
+}
+
+.info-title i {
+    font-size: 150%;
+}
+
+.info-heading {
+    display: flex;
+    flex-direction: row;
+}
